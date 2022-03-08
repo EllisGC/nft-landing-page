@@ -1,6 +1,6 @@
 // METAMASK CONNECTION
 const TIMEOUT = 1000;
-const COLLECTION_NAME = 'CodeCats';
+const COLLECTION_NAME = 'SharkPack';
 let editions = [];
 let dots = 1;
 
@@ -37,6 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   };
 
+  // if user changes meta mask account
   updateButton();
   if (MetaMaskOnboarding.isMetaMaskInstalled()) {
     window.ethereum.on('accountsChanged', (newAccounts) => {
