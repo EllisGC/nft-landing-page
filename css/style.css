@@ -8,7 +8,7 @@
   --font-primary: 'Poppins', sans-serif;
   --font-secondary: 'Arvo', serif;
   --font-code: 'Roboto', monospace;
-  --bg-color: #00163f;
+  --bg-color: rgb(8, 216, 253);
   --font-color: #ffffff;
   --btn-bg-color: #ffffff;
   --accent-color: #be7efe;
@@ -38,6 +38,13 @@ body {
   padding: 1rem 2rem;
 }
 
+.logo {
+  position:absolute;
+  top:0;
+  left: 0;
+}
+
+
 /* HEADER */
 
 header {
@@ -54,6 +61,7 @@ header .container {
   display: flex;
   gap: 2rem;
   align-items: center;
+  float:right;
 }
 
 /* BUTTONS */
@@ -83,6 +91,8 @@ header .container {
   border-radius: 5rem;
   margin-left: 2rem;
   border-color: transparent;
+  position: relative;
+  right:0;
 }
 
 .hero-btn {
