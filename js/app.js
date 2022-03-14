@@ -1,6 +1,6 @@
 // METAMASK CONNECTION
 const TIMEOUT = 1000;
-const COLLECTION_NAME = 'SharkPack';
+const COLLECTION_NAME = 'Shark Pack';
 let editions = [];
 let dots = 1;
 

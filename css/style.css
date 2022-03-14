@@ -1,14 +1,14 @@
 /* FONTS */
 
-@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
 
 /* GLOBAL STYLES */
 
 :root {
-  --font-primary: 'Poppins', sans-serif;
-  --font-secondary: 'Arvo', serif;
-  --font-code: 'Roboto', monospace;
-  --bg-color: rgb(8, 216, 253);
+  --font-primary: 'Patrick Hand', sans-serif;
+  --font-secondary: 'Patrick Hand', serif;
+  --font-code: 'Patrick Hand', monospace;
+  --bg-color: #0b72e7;
   --font-color: #ffffff;
   --btn-bg-color: #ffffff;
   --accent-color: #be7efe;
@@ -20,6 +20,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 
 body {
   background-color: var(--bg-color);
@@ -50,6 +51,78 @@ body {
 header {
   box-shadow: var(--header-shadow);
 }
+.header-banner {
+  position: fixed;
+  left: 100;
+  right: 0;
+  display: flex;
+  width: 104vw;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  transition: all .2s ease-in-out;
+}
+
+.header-banner-left {
+  width: 120px;
+  padding: 10px;
+  margin-left: 4%;
+}
+
+.header-banner-right {
+  display: flex;
+  width: 460px;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 10%;
+}
+.header-banner-right-socials img {
+  max-width: 20%;
+  padding-left: 3%;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.card {
+  position:relative;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+#img1 img {
+  max-width: 100%;
+  float: left;
+}
+#img2 img {
+max-width: 100%;
+  float: left;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 350%;
+}
+
+.centered-2 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 200%;
+}
+
+
+
 
 header .container {
   flex-direction: row;
@@ -101,69 +174,43 @@ header .container {
   padding: 1.5rem 3rem;
 }
 
-/* COUNTDOWN SECTION */
+/* SKIN RARITY SECTION */
 
 section {
   flex: 1 1 auto;
 }
 
-.countdown {
+
+.skin-rarity-1 {
+  max-width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 3%;
+  padding-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 100%;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  
 }
 
-.countdown ul {
-  display: flex;
-  gap: 2rem
-}
-.countdown .clock-item {
-  list-style: none;
-  width: 70px;
-  height: auto;
-}
-.countdown .clock-item .count-number {
-  background: var(--accent-color);
-  color: var(--font-color);
-  font-size: 2rem;
-  font-weight: 700;
-  font-family: var(--font-secondary);
-  padding: 1rem;
+.skins-image {
+  position:relative;
+  vertical-align: middle;
   display: inline-block;
-  width: 100%;
-  text-align: center;
-  line-height: 1;
-  border-radius: 4px 4px 0 0;
-}
-.countdown .clock-item .count-text {
-  background: var(--btn-bg-color);
-  font-family: var(--font-secondary);
-  font-size: 1.1rem;
-  color: var(--bg-color);
-  padding: 0.5rem 0.7rem;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  line-height: 1;
-  border-radius: 0 0 4px 4px;
+
+
 }
 
-.countdown h1 {
-  text-shadow: 2px 2px 0 var(--accent-color);
-  font-style: italic;
-  margin: 2rem 0;
-  font-size: 3.5rem;
-  text-align: center;
-}
 
-.countdown p {
-  font-size: 1.1rem;
-  font-family: var(--font-secondary);
-  margin-bottom: 2rem;
-  text-align: center;
-}
+
+
+
+
+
 
 /* OWNER STYLES */
 
