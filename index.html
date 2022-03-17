@@ -31,7 +31,10 @@
       background: #17181d;
       display: flex;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    
+    }
+
+    .nav--hidden {
+      transform: translateY(-105px);
     }
   </style>
   <nav class="nav">
@@ -80,14 +83,16 @@
         <div id="img2">
             <img src="images/Skins.png">
         </div>
-        <div class="centered" >Join The Pack? </div>
-        <div class="centered-2">Shark Pack is a community driven collection of 10k randomly generated ERC-721 tokens on the Ethereum blockchain.
-            Our objective is to create the largest school of sharks in the metaverse.
-            By joining the pack it grants you full rights to the shark artwork and a cool new PFP to flex among your fellow degens, Alongside access to a valuable community that from launch will have a large input into the direction of the project.</div>
-        </div>
-    </div>
+        <div class ="centered"> <h1> Join The Pack? </h1>
+          <p> Shark Pack is a community driven collection of 10k randomly generated ERC-721 tokens on the Ethereum blockchain.
+             Our objective is to create the largest school of sharks in the metaverse.
+             By joining the pack it grants you full rights to the shark artwork and a cool new PFP to flex among your fellow degens, Alongside access to a valuable community that from launch will have a large input into the direction of the project.</p></div>
+       </div>
+     
 </section>
-
+<div id ="img3">
+  <img src="images/TEAM-final.png">
+</div>
 
 
 
@@ -125,6 +130,26 @@
 </div>
 </div>
 </footer>
+
+<script>
+  // Enable hidden nav bar
+
+  {
+    const nav = document.querySelector(".nav");
+    let LastScrollY = window.scrollY;
+
+
+    window.addEventListener("scroll", () => {
+      if(LastScrollY < window.scrollY) {
+        nav.classList.add("nav--hidden");
+      } else {
+        nav.classList.remove("nav--hidden");
+      }
+
+      LastScrollY = window.scrollY;
+    });
+  }
+</script>
 <script src="https://cdn.jsdelivr.net/npm/@metamask/onboarding@1.0.1/dist/metamask-onboarding.bundle.js"></script>
 <script src="js/countdown.js"></script>
 <script src="js/app.js"></script>

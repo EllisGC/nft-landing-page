@@ -21,6 +21,12 @@
   box-sizing: border-box;
 }
 
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
+
 
 body {
   background-color: var(--bg-color);
@@ -31,13 +37,6 @@ body {
   font-family: var(--font-primary);
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-}
 
 .logo {
   position:absolute;
@@ -95,6 +94,7 @@ header {
   display: inline-block;
 }
 
+
 #img1 img {
   max-width: 100%;
   float: left;
@@ -103,23 +103,20 @@ header {
 max-width: 100%;
   float: left;
 }
-
+#img3 img {
+  max-width: 100%;
+    float: left;
+  }
+  
 /* Centered text */
 .centered {
   position: absolute;
-  top: 20%;
+  top: 32%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 350%;
+  font-size: 300%;
 }
 
-.centered-2 {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 200%;
-}
 
 
 
@@ -220,6 +217,44 @@ section {
 }
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 1280px) {
+  .centered {
+    position: absolute;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 170%;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .centered {
+    position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 150%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .centered {
+    position: absolute;
+  top: 29%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 140%;
+  }
+}
+
+@media screen and (max-width: 653px) {
+  .centered {
+    position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70%;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .menu {
@@ -230,11 +265,53 @@ section {
     padding: 1rem;
     max-width: 8rem;
   }
-  .countdown h1 {
-    font-size: 2rem;
+  .centered {
+    position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 90%;
   }
-  .countdown p {
-    font-size: 1rem;
+  
+}
+@media screen and (max-width: 950px) {
+  .centered {
+    position: absolute;
+  top: 29%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 130%;
   }
 }
+@media screen and (max-width: 540px) {
+  .centered {
+    position: absolute;
+  top: 29%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80%;
+  }
+
+}
  
+@media screen and (max-width: 450px) {
+  .centered {
+    position: absolute;
+  top: 31%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60%;
+  }
+  
+}
+
+@media screen and (max-width: 280px) {
+  .centered {
+    position: absolute;
+  top: 29%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40%;
+  }
+
+}
