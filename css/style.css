@@ -11,7 +11,7 @@
   --bg-color:#0b72e7;
   --font-color: #ffffff;
   --btn-bg-color: #ffffff;
-  --accent-color: #be7efe;
+  --accent-color: #0b72e7;
   --header-shadow: #000 0px 0px 5px;
 }
 
@@ -246,15 +246,18 @@ section {
   }
 }
 
-@media screen and (max-width: 653px) {
+@media screen and (max-width: 670px) {
   .centered {
     position: absolute;
   top: 32%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 70%;
+  font-size: 60%;
   }
 }
+
+
+
 
 @media screen and (max-width: 768px) {
   .menu {
@@ -267,10 +270,10 @@ section {
   }
   .centered {
     position: absolute;
-  top: 35%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 90%;
+  font-size: 85%;
   }
   
 }
