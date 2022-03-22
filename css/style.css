@@ -38,13 +38,6 @@ body {
 }
 
 
-.logo {
-  position:absolute;
-  top:0;
-  left: 0;
-}
-
-
 /* HEADER */
 
 header {
@@ -65,7 +58,7 @@ header {
 }
 
 .header-banner-left {
-  width: 120px;
+  width: 160px;
   padding: 10px;
   margin-left: 4%;
 }
@@ -79,13 +72,13 @@ header {
   align-items: center;
   margin-right: 10%;
 }
-.header-banner-right-socials img {
-  max-width: 20%;
-  padding-left: 3%;
-  cursor: pointer;
-  vertical-align: middle;
-}
 
+.responsive {
+  height: auto;
+  width: 300%;
+
+
+}
 .card {
   position:relative;
   text-align: center;
@@ -104,6 +97,11 @@ max-width: 100%;
   float: left;
 }
 #img3 img {
+  max-width: 100%;
+    float: left;
+  }
+
+#img4 img {
   max-width: 100%;
     float: left;
   }
@@ -129,9 +127,12 @@ header .container {
 
 .menu {
   display: flex;
+  height: auto;
+  max-width: 100%;
   gap: 2rem;
   align-items: center;
   float:right;
+ 
 }
 
 /* BUTTONS */
@@ -178,33 +179,6 @@ section {
 }
 
 
-.skin-rarity-1 {
-  max-width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 3%;
-  padding-bottom: 5%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-  
-}
-
-.skins-image {
-  position:relative;
-  vertical-align: middle;
-  display: inline-block;
-
-
-}
-
-
-
-
 
 
 
@@ -218,10 +192,29 @@ section {
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 375px) {
+  .header-banner-left {
+    width: 200px;
+    padding: 2px;
+    margin-left: 2%;
+  }
+  .menu {
+    display: flex;
+    height: auto;
+    max-width: 30%;
+    gap: 2rem;
+    align-items: center;
+}  
+.wallet-btn{
+  align-items: center;
+}
+}
+
 
 @media screen and (max-width: 768px) {
   .menu {
     gap: 1rem;
+    top: 70%;
   }
   .wallet-btn {
     margin-left: 0;
