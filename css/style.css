@@ -77,7 +77,6 @@ header {
   height: auto;
   width: 300%;
 
-
 }
 .card {
   position:relative;
@@ -192,16 +191,67 @@ section {
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 280px) {
+  .responsive {
+    height: auto;
+  width: 50%;
+  }
+  .menu {
+    display: flex;
+    height: auto;
+    max-width: 25%;
+    gap: 2rem;
+    align-items: center;
+}  
+.wallet-btn{
+  align-items: center;
+}
+}
+
+
 @media screen and (max-width: 375px) {
-  .header-banner-left {
-    width: 200px;
-    padding: 2px;
-    margin-left: 2%;
+  .responsive {
+    height: auto;
+  width: 100%;
   }
   .menu {
     display: flex;
     height: auto;
     max-width: 30%;
+    gap: 2rem;
+    align-items: center;
+}  
+.wallet-btn{
+  align-items: center;
+}
+}
+
+@media screen and (max-width: 415px) {
+  .responsive {
+    height: auto;
+  width: 100%;
+  }
+  .menu {
+    display: flex;
+    height: auto;
+    max-width: 28%;
+    gap: 2rem;
+    align-items: center;
+}  
+.wallet-btn{
+  align-items: center;
+}
+}
+
+@media screen and (max-width: 540px) {
+  .responsive {
+    height: auto;
+  width: 200%;
+  }
+  .menu {
+    display: flex;
+    height: auto;
+    max-width: 39%;
     gap: 2rem;
     align-items: center;
 }  
