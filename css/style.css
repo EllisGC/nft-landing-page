@@ -8,7 +8,7 @@
   --font-primary: 'Patrick Hand', sans-serif;
   --font-secondary: 'Patrick Hand', serif;
   --font-code: 'Patrick Hand', monospace;
-  --bg-color:#0b72e7;
+  --bg-color:#83d0cb;
   --font-color: #ffffff;
   --btn-bg-color: #ffffff;
   --accent-color: #0b72e7;
@@ -40,15 +40,14 @@ body {
 
 /* HEADER */
 
-header {
-  box-shadow: var(--header-shadow);
-}
+
 .header-banner {
   position: fixed;
   left: 100;
   right: 0;
   display: flex;
   width: 104vw;
+  height: var(--nav-height);
   flex-direction: row;
   align-content: center;
   justify-content: space-between;
@@ -103,7 +102,64 @@ max-width: 100%;
 #img4 img {
   max-width: 100%;
     float: left;
+    
   }
+
+
+#img5 img {
+  max-width: 100%;
+  float: left;
+ 
+  
+  }
+
+ #img6 img {
+  max-width: 100%;
+
+  }
+
+#FirstDiv {
+  width: 150px;
+  height: 150px;
+  background: red;
+  position: absolute;
+  z-index: 1;
+  
+}
+
+#SecondDiv {
+  width: 200px;
+  height: 200px;
+  background: blue;
+  margin: 14px;
+  position: relative;
+
+}
+
+.faq {
+  padding-top: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-family: FatMarker;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: normal;
+}
+
+
+.faq-div {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  position: relative;;
+ 
+}
+
   
 /* Centered text */
 .centered {
@@ -115,14 +171,6 @@ max-width: 100%;
 }
 
 
-
-
-
-header .container {
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .menu {
   display: flex;

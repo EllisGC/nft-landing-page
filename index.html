@@ -23,7 +23,7 @@
     }
 
     .nav {
-      width: 100%;
+      width: 104vw;
       height: var(--nav-height);
       position: fixed;
       top:0;
@@ -38,7 +38,6 @@
     }
   </style>
   <nav class="nav">
-    <section> 
       <div class="header-banner">
         <div class="header-banner-left">
           <img class="responsive" src="images/x-icon/Web-Title.png" alt="SharkPack Logo">
@@ -69,9 +68,7 @@
             <button id="connectWallet" class="wallet-btn btn">Connect Wallet</button>
           </div>
         </div>
-      </section>
-  
-
+      
   </nav>
 
 <section>
@@ -101,33 +98,60 @@
 
 
 <footer id="footer">
-    <div class="footer-div">
-  <div class="faq">FAQ's</div>
-  <button type="button" class="collapsible">WHAT MAKES SHARK PACK DIFFERENT?</button>
-  <div class="content">
-    <p>Shark Pack is 
-    </p>
+
+
+     
+    </div>
   </div>
-  <br>
-  <button type="button" class="collapsible2">WHAT’S MINT PRICE AND SUPPLY</button>
-  <div class="content2">
-    <p>You can join the Shark Pack for a mint price of 0.06 eth + gas fees, the supply will be 10,000.
-    </p>
+  <style>
+    .parent {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+    .faq-bg {
+      position: relative;
+      max-width: 100%;
+      top: 0;
+      left: 0;
+      border: 1px ;
+    }
+    .image2 {
+      position: absolute;
+      top: 200px;
+      left: 500px;
+      border: 1px ;
+    }
+    .image3 {
+      position: absolute;
+      top: 350px;
+      left: 500px;
+      border: 1px ;
+    }
+    .image4 {
+      position: absolute;
+      top: 500px;
+      left: 500px;
+      border: 1px ;
+    }
+    .image5 {
+      position: absolute;
+      top: 650px;
+      left: 500px;
+      border: 1px ;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <img class="faq-bg" src="/images/FAQ.png" />
+    <img class="image2" src="/images/FAQ-Buttons.png" />
+    <img class="image3" src="/images/FAQ-Buttons.png" />
+    <img class="image4" src="/images/FAQ-Buttons.png" />
+    <img class="image5" src="/images/FAQ-Buttons.png" />
+
   </div>
-  <br>
-  <button type="button" class="collapsible3">WHEN CAN I MINT SHARK PACK</button>
-  <div class="content3">
-    <p> TBC
-    </p>
-  </div>
-  <br>
-  <button type="button" class="collapsible4">WHAT RIGHTS DO I HAVE TO THE ARTWORK</button>
-  <div class="content4">
-    <p> Once you own your Shark Pack NFT, you will have the exclusive rights to do anything you desire with the artwork.
-    </p>
-  </div>
-</div>
-</div>
+
 </footer>
 
 <script>
