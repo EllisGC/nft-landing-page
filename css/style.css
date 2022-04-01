@@ -8,7 +8,7 @@
   --font-primary: 'Patrick Hand', sans-serif;
   --font-secondary: 'Patrick Hand', serif;
   --font-code: 'Patrick Hand', monospace;
-  --bg-color:#83d0cb;
+  --bg-color:#9ee1dd;
   --font-color: #ffffff;
   --btn-bg-color: #ffffff;
   --accent-color: #0b72e7;
@@ -69,7 +69,7 @@ body {
   align-content: center;
   justify-content: space-evenly;
   align-items: center;
-  margin-right: 10%;
+  margin-right: -200%;
 }
 
 .responsive {
@@ -118,50 +118,11 @@ max-width: 100%;
 
   }
 
-#FirstDiv {
-  width: 150px;
-  height: 150px;
-  background: red;
-  position: absolute;
-  z-index: 1;
-  
-}
 
-#SecondDiv {
-  width: 200px;
-  height: 200px;
-  background: blue;
-  margin: 14px;
-  position: relative;
-
-}
-
-.faq {
-  padding-top: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  font-family: FatMarker;
-  color: #ffffff;
-  font-size: 50px;
-  font-weight: normal;
-}
-
-
-.faq-div {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  position: relative;;
- 
-}
 
   
 /* Centered text */
+
 .centered {
   position: absolute;
   top: 32%;
@@ -176,7 +137,7 @@ max-width: 100%;
   display: flex;
   height: auto;
   max-width: 100%;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
   float:right;
  
@@ -219,11 +180,162 @@ max-width: 100%;
   padding: 1.5rem 3rem;
 }
 
-/* SKIN RARITY SECTION */
+/* TEST.HTML CSS SECTION*/
+
+body {
+  --nav-height: 105px;
+
+  padding-top: var(--nav-height);
+}
+
+.container {
+  border: 1px white solid;
+  max-width: 100%;
+
+}
+
+.logo {
+  height: auto;
+  width: 100%;
+}
+
+nav {
+  text-align: center;
+  width: 104vw;
+  height: var(--nav-height);
+  position: fixed;
+  top:0;
+  left: 0;
+  background: #9ee1dd;
+  display: flex;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.nav--hidden {
+  transform: translateY(-105px);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 10px;
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%)
+  
+}
+
+nav li{
+  display: inline-block
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size:35px;
+  
+}
+
+nav a:hover{
+
+  color: #000;
+}
+
+.socials {
+  display: flex;
+  width: 100px;
+  height: auto;
+  padding-left: 35%;
+  gap: 1rem;
+  cursor: pointer;
+  vertical-align:middle;
+  justify-content: space-evenly;
+  align-items: center;
+ 
+
+}
+
+#main {
+  width: 100%;
+}
+.about{
+  padding: 5px;
+
+}
+
+
+footer{
+  text-align: center;
+  padding-top: 35px;
+  font-size:35px;
+  
+}
+
+@media screen and (min-width: 1200px) {
+  .container{
+    max-width: 1100px;
+  }
+  
+}
+
+@media screen  and (min-width: 800px) {
+  nav {
+    float: left;
+    width: 100%;
+  }
+  nav li {
+    display: inline-flex;
+  }
+  .logo{
+    width: 20%;
+  }
+  
+}
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+  nav a {
+    float: none;
+    display: block;
+  }
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 section {
   flex: 1 1 auto;
 }
+
+
 
 
 
@@ -269,10 +381,25 @@ section {
     gap: 2rem;
     align-items: center;
 }  
+
 .wallet-btn{
   align-items: center;
 }
+.parent {
+  position: absolute;
+  
 }
+.faq-bg {
+  position: absolute;
+  max-width: 100%;
+
+}
+.image2 {
+  position: absolute;
+  top: 100px;
+  left: 500px;
+  border: 1px 
+} }
 
 @media screen and (max-width: 415px) {
   .responsive {
