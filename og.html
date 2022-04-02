@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shark Pack</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Shark Pack -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/x-icon/favicon-2.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/x-icon/favicon-2.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/x-icon/favicon.ico">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <style>
+    body {
+      --nav-height: 105px;
+
+      padding-top: var(--nav-height);
+    }
+
+    .nav {
+      width: 104vw;
+      height: var(--nav-height);
+      position: fixed;
+      top:0;
+      left: 0;
+      background: #9ee1dd;
+      display: flex;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      
+    }
+
+    .nav--hidden {
+      transform: translateY(-105px);
+    }
+  </style>
+
+<style>
+  .parent {
+    position: relative;
+    
+  }
+  .faq-bg {
+    position: absolute;
+    max-width: 100%;
+  
+  }
+  .image2 {
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    border: 1px ;
+  }
+  .image3 {
+    position: absolute;
+    top: 350px;
+    left: 500px;
+    border: 1px ;
+  }
+  .image4 {
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    border: 1px ;
+  }
+  .image5 {
+    position: absolute;
+    top: 650px;
+    left: 500px;
+    border: 1px ;
+  }
+</style>
+  <nav class="nav">
+      <div class="header-banner">
+        <div class="header-banner-left">
+          <img class="responsive" src="images/x-icon/Web-Title.png" alt="SharkPack Logo">
+        </div>
+            <div class="menu">
+              <a
+                href="https://discord.gg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="images/header/discord.webp" alt="Discord" />
+              </a>
+              <a
+                href="https://twitter.com/SharkPackNFT"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="images/header/twitter.webp" alt="Twitter" />
+              </a>
+              <a
+                href="https://opensea.io"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="images/header/opensea.webp" alt="Opensea" />
+              </a>
+          <div class="header-banner-right-wallet">
+            <button id="connectWallet" class="wallet-btn btn">Connect Wallet</button>
+          </div>
+        </div>
+      
+  </nav>
+
+<section>
+    <div class="card">
+        <div id ="img1">
+            <img src="images/Join-Pack.png">
+        </div>
+        <div id="img2">
+            <img src="images/Skins.png">
+        </div>
+        <div class ="centered"> <h1 style="font-size: 4.5vw;"> Join The Pack? </h1>
+          <p style="font-size: 2.5vw;"> Shark Pack is a community driven collection of 10k randomly generated ERC-721 tokens on the Ethereum blockchain.
+             Our objective is to create the largest school of sharks in the metaverse.
+             By joining the pack it grants you full rights to the shark artwork and a cool new PFP to flex among your fellow degens, Alongside access to a valuable community that from launch will have a large input into the direction of the project.</p></div>
+       </div>
+     
+</section>
+<div id ="img3">
+  <img src="images/TEAM-final.png">
+</div>
+<div id ="img4">
+  <img src="images/ROADMAPLARGE.png">
+</div>
+
+
+
+
+
+<footer id="footer">
+  
+  <!-- <div class="parent">
+    <img class="faq-bg" src="/images/FAQ.png" />
+    <img class="image2" src="/images/FAQ-Buttons.png" />
+    <img class="image3" src="/images/FAQ-Buttons.png" />
+    <img class="image4" src="/images/FAQ-Buttons.png" />
+    <img class="image5" src="/images/FAQ-Buttons.png" />
+
+  </div> -->
+
+</footer>
+
+<script>
+  // Enable hidden nav bar
+
+  {
+    const nav = document.querySelector(".nav");
+    let LastScrollY = window.scrollY;
+
+
+    window.addEventListener("scroll", () => {
+      if(LastScrollY < window.scrollY) {
+        nav.classList.add("nav--hidden");
+      } else {
+        nav.classList.remove("nav--hidden");
+      }
+
+      LastScrollY = window.scrollY;
+    });
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@metamask/onboarding@1.0.1/dist/metamask-onboarding.bundle.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/app.js"></script>
+    
+
+     
+    
+
+</body>
+
+</html>

@@ -195,12 +195,10 @@ body {
 }
 
 .logo {
-  height: auto;
-  width: 100%;
+  height: 100px;
 }
 
 nav {
-  text-align: center;
   width: 104vw;
   height: var(--nav-height);
   position: fixed;
@@ -209,6 +207,7 @@ nav {
   background: #9ee1dd;
   display: flex;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  align-items: center;
 }
 .nav--hidden {
   transform: translateY(-105px);
@@ -231,7 +230,7 @@ nav li{
 }
 
 nav a {
-  display: block;
+  display: inline-block;
   padding: 10px;
   color: #ffffff;
   text-decoration: none;
@@ -240,9 +239,34 @@ nav a {
 }
 
 nav a:hover{
-
   color: #000;
 }
+
+.dropdown {
+  display: none;
+}
+
+.dropdown-line {
+  width: 40px;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 4px;
+}
+
+@media all and (max-width: 480px) {
+  .dropdown {
+    display: block;
+    right: 10px;
+    position: absolute;
+    
+  }
+  nav ul{
+    display: none;
+  }
+ 
+}
+
+
 
 .socials {
   display: flex;
@@ -258,13 +282,7 @@ nav a:hover{
 
 }
 
-#main {
-  width: 100%;
-}
-.about{
-  padding: 5px;
 
-}
 
 
 footer{
@@ -281,7 +299,7 @@ footer{
   
 }
 
-@media screen  and (min-width: 800px) {
+@media screen  and (max-width: 800px) {
   nav {
     float: left;
     width: 100%;
@@ -290,9 +308,14 @@ footer{
     display: inline-flex;
   }
   .logo{
-    width: 20%;
-  }
+    display: block;
+    height: auto;
+    
   
+  }
+  .socials{
+    width: 20px;
+  }
 }
 
 /* Responsive navigation menu (for mobile devices) */
