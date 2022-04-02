@@ -194,9 +194,7 @@ body {
         flex-direction: column;
         padding: 10px 10px;
     }
-    .nav--hidden {
-        display: none;
-      }
+    
 
       
    /* .dropdown {
