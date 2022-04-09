@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Accordion </title>
+    <link rel="stylesheet" href="css/faq2.css" />
+</head>
+<body>
+   
+   <div class="accordion">
+       <div class="contentBx">
+           <div class="label">Question One</div>
+           <div class="content">
+               <p>Mint date coming soon</p>
+           </div>
+       </div>
+       <div class="contentBx">
+        <div class="label">Question Two</div>
+        <div class="content">
+            <p>Mint date coming soon</p>
+        </div>
+    </div>
+    <div class="contentBx">
+        <div class="label">Question Three</div>
+        <div class="content">
+            <p>Mint date coming soon</p>
+        </div>
+    </div>
+    <div class="contentBx">
+        <div class="label">Question Four</div>
+        <div class="content">
+            <p>Mint date coming soon</p>
+        </div>
+    </div>
+   </div>
+
+<script>
+    const accordion = document.getElementsByClassName('contentBx');
+
+    for (i =0; i<accordion.length; i++ ){
+        accordion[i].addEventListener('click', function(){
+            this.classList.toggle('active')
+        })
+    }
+</script>
+
+
+</body>
+
+</html>

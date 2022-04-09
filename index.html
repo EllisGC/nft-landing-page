@@ -10,13 +10,14 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/x-icon/favicon-2.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/x-icon/favicon-2.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="images/x-icon/favicon.ico">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
 
     <nav class="navbar">
         <div>
-            <img class="primary-logo" src="/images/x-icon/Web-Title.png" alt="SharkPack Logo">
+            <img class="primary-logo" src="/images/header/HeaderTitle.png" alt="SharkPack Logo">
         </div>
         <ul class="nav-list" id="listNav">
             <li class="list-item">
@@ -73,7 +74,6 @@
                     Our objective is to create the largest school of sharks in the metaverse.
                     By joining the pack it grants you full rights to the shark artwork and a cool new PFP to flex among your fellow degens, Alongside access to a valuable community that from launch will have a large input into the direction of the project.
                 </p>
-            
         </section>
              <div id ="img2">
                 <img src="/images/Skins.png">
@@ -90,20 +90,105 @@
     <div id="roadmap-section">
         <section id="roadmap-section">
             <div id ="img4">
-                <img src="images/RoadMap1.png">
+                <img src="images/Roadmap.png">
             </div>
         </section>
     </div>
     <div id="faq-section">
         <section id="faq-section">
-            <div id ="img5">
-                <img src="images/FAQ.png">
+        
+              
+            
+               <!--  <button type="button" class="collapsible">Wen mint?</button>
+                <div class="faq-content">
+                    <p>MINT DATE TBC</p>
+                </div>
+                <button type="button" class="collapsible">Whats total supply?</button>
+                <div class="faq-content">
+                    <p>10,000</p>
+                </div>
+                <button type="button" class="collapsible">How much is mint?</button>
+                <div class="faq-content">
+                    <p>0.06 ETH</p>
+                </div>
+                <button type="button" class="collapsible">Wen mint?</button>
+                <div class="faq-content">
+                    <p>MINT DATE TBC</p>
+                </div>
               </div>
         </section>
-    </div>
+
+        <section-faq>
+            <div class="container">
+                <div class="accordian">
+                    <div class="accordian-item" id="question1">
+                        <a class="accordian-link" href="#question1">
+                            Wen mint?
+                            <i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="answer">
+                            TBC
+                        </div>
+                    </div>
+                    <div class="accordian-item" id="question2">
+                        <a class="accordian-link" href="#question2">
+                            Wen mint?
+                            <i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="answer">
+                            TBC
+                        </div>
+                    </div>
+                    <div class="accordian-item" id="question3">
+                        <a class="accordian-link" href="#question3">
+                            Wen mint?
+                            <i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="answer">
+                            TBC
+                        </div>
+                    </div>
+                    <div class="accordian-item" id="question4">
+                        <a class="accordian-link" href="#question4">
+                            Wen mint?
+                            <i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="answer">
+                            TBC
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section-faq>
+    </div> -->
+
 </body>
 
-<footer>© Copyright 2022 - Shark Pack - All rights reserved </footer>
+<footer id="footer">
+    <button type="button" class="collapsible">Wen mint?</button>
+    <div class="faq-content">
+        <p>MINT DATE TBC</p>
+    </div>
+    <button type="button" class="collapsible">Whats total supply?</button>
+    <div class="faq-content">
+        <p>10,000</p>
+    </div>
+    <button type="button" class="collapsible">How much is mint?</button>
+    <div class="faq-content">
+        <p>0.06 ETH</p>
+    </div>
+    <button type="button" class="collapsible">Wen mint?</button>
+    <div class="faq-content">
+        <p>MINT DATE TBC</p>
+    </div>
+    <div class="footer-txt">
+        © Copyright 2022 • Shark Pack • All rights reserved
+    </div>
+</footer>
 
 <script>
     const toggleButton = document.getElementById('toggleButton');
@@ -130,6 +215,33 @@
       LastScrollY = window.scrollY;
     });
   }
+
+  // Collapsible FAQ
+
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+            });
+        }
+
+        const accordion = document.getElementsByClassName('contentBx');
+
+for (i =0; i<accordion.length; i++ ){
+    accordion[i].addEventListener('click', function(){
+        this.classList.toggle('active')
+    })
+}
+</script>
+
 
 
 

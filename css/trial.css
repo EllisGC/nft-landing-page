@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
+body{
+    font-family: 'Patrick Hand';
+    background-color: #9ee1dd;
+}
+
+.container-fluid{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.container-fluid h2 {
+    color: #ffff;
+    position: relative;
+    width: 23rem;
+    text-align: center;
+}
+
+.container-fluid h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+    width: 67px;
+    height: 2px;
+    background-color: #ffff;
+}
+
+.accordion {
+    width: 100%;
+    padding: 0 5px;
+    border: 2px solid #6db6ff;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.accordion .icon {
+    margin: 0 10px 0 0;
+    width: 30px;
+    height: 30px;
+    background: url(/images/plus.png) no-repeat 2px 3px #9ee1dd;
+    border-radius: 50%;
+    float: left;
+    transition: all .5s ease-in;
+}
+
+.accordion h5 {
+    font-size: 30px;
+    margin: 0;
+    padding: 10px 0;
+    font-weight: normal;
+    color: #ffff;
+    transition: all .5s ease-in;
+}
+
+.active .icon {
+    background: url(/images/minus-sign.png) no-repeat 8px -25px #ffff;
+
+}
+
+.active {
+    background-color: #6db6ff;
+    color: #ffff;
+}
+
+.active h5 {
+    color: #ffff;
+}
+.panel {
+    padding: 0 15px;
+    border-left: 1px solid #ffff;
+    margin-left: 25px;
+    font-size: 22px;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 300px;
+    transition: all .5s ease-in;
+}

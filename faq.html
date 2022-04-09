@@ -1,53 +1,57 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/test.css" />
+    </head>
     <title>FAQ Test</title>
-    <style>
-      .parent {
-        position: relative;
-        max-width: 100%;
-        top: 0;
-        left: 0;
-      }
-      .image1 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        border: 1px solid #000000;
-      }
-      .image2 {
-        position: absolute;
-        top: 200px;
-        left: 500px;
-        border: 1px ;
-      }
-    .image3 {
-    position: absolute;
-    top: 350px;
-    left: 500px;
-    border: 1px ;
-  }
-  .image4 {
-    position: absolute;
-    top: 500px;
-    left: 500px;
-    border: 1px ;
-  }
-  .image5 {
-    position: absolute;
-    top: 650px;
-    left: 500px;
-    border: 1px ;
-  }
-    </style>
-  </head>
-  <body>
-    <div class="parent">
-      <img class="image1" src="/images/FAQ.png" />
-      <img class="image2" src="/images/FAQ-Buttons.png"/>
-      <img class="image3" src="/images/FAQ-Buttons.png" />
-      <img class="image4" src="/images/FAQ-Buttons.png" />
-      <img class="image5" src="/images/FAQ-Buttons.png" />
-    </div>
+    <section-faq>
+      <div class="container">
+          <div class="accordian">
+              <div class="accordian-item" id="question1">
+                  <a class="accordian-link" href="#question1">
+                      Wen mint?
+                      <i class="icon ion-md-add"></i>
+                      <i class="icon ion-md-remove"></i>
+                  </a>
+                  <div class="answer">
+                      TBC
+                  </div>
+              </div>
+              <div class="accordian-item" id="question2">
+                  <a class="accordian-link" href="#question2">
+                      Wen mint?
+                      <i class="icon ion-md-add"></i>
+                      <i class="icon ion-md-remove"></i>
+                  </a>
+                  <div class="answer">
+                      TBC
+                  </div>
+              </div>
+              <div class="accordian-item" id="question3">
+                  <a class="accordian-link" href="#question3">
+                      Wen mint?
+                      <i class="icon ion-md-add"></i>
+                      <i class="icon ion-md-remove"></i>
+                  </a>
+                  <div class="answer">
+                      TBC
+                  </div>
+              </div>
+              <div class="accordian-item" id="question4">
+                  <a class="accordian-link" href="#question4">
+                      Wen mint?
+                      <i class="icon ion-md-add"></i>
+                      <i class="icon ion-md-remove"></i>
+                  </a>
+                  <div class="answer">
+                      TBC
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section-faq>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
