@@ -143,9 +143,130 @@ body {
    
     }
 
-    
 
-@media all and (max-width: 313px) {
+
+footer{
+    background-image: url(/images/faq2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: #9ee1dd!important;
+  }
+
+  .footer-txt{
+    text-align: center;
+    padding-top: 350px;
+    font-size: 35px;
+      
+  }
+
+footer{
+    background-size: contain!important;
+}
+
+
+/* FAQ Collapsible */
+
+.collapsible {
+    background-image: url(/images/FAQ_Button1.png);
+    color: #ffff;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    font-family: var(--font-primary);
+    cursor: pointer;
+    margin: auto;
+    cursor: pointer;
+    margin: auto;
+    padding-left: 5%;
+    padding-bottom: 1%;
+    width: 67%;
+    height: 160px;
+    border: none;
+    text-align: left;
+    align-content: center;
+    justify-content: center;
+    font-size: 60px;
+    transform: translate(1%, 120%);
+  }
+
+.collapsible{
+    background-size: contain!important;
+
+  }
+.active,
+.collapsible:active{
+  background-image: url(/images/FAQ__Button2.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  margin: auto;
+  padding-left: 5%;
+  padding-bottom: 1%;
+  cursor: pointer;
+}
+ 
+.faq-content {
+    padding: 0 18px;
+    display: block;
+    overflow: hidden;
+    background-color: black;
+    color: #000;
+    text-align: left;
+    margin: auto;
+    display: none;
+    overflow: hidden;
+    width: 65%;
+    background-color: #9ee1dd;
+    align-content: center;
+    justify-content: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-left-style: solid;
+    border-left-color: #000000;
+    border-left-width: 10px;
+    border-right-style: solid;
+    border-right-color: #000000;
+    border-right-width: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: #000000;
+    border-bottom-width: 10px;
+    border-top-style: solid;
+    border-top-color: #000000;
+    border-top-width: 10px;
+    position: relative;
+    font-size: 20px;
+    left: 1px;
+    top: 93px;
+    transform: translate(1%, 120%);
+  }
+
+  .div-footer {
+    background-image: url("/images/faq2.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  /* .collapsible:after {
+    content: '\02795';  Unicode character for "plus" sign (+) 
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 20px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-)
+  } */
+
+  @media all and (max-width: 313px) {
     .navbar{
         flex-direction: column;
         position: relative;
@@ -177,8 +298,8 @@ body {
     .active {
         display: block;
     }
-   
-
+    
+    
   }
 
 @media all and (max-width: 480px) {
@@ -195,6 +316,12 @@ body {
         flex-direction: column;
         padding: 10px 10px;
     }
+    .footer-txt{
+        text-align: center;
+        padding-top: 150px;
+        font-size: 10px;
+          
+      }
     
 
       
@@ -235,6 +362,13 @@ body {
     
 }
 
+@media (max-width: 870px) {
+    .collapsible{
+        height: 100px!important;
+        font-size: 25px!important;
+    }
+}
+
 @media all and (max-width: 970px) {
     .navbar{
         flex-direction: column;
@@ -245,9 +379,18 @@ body {
         width: 100%;
         height: 50px;
     }
+    button.collapsible {
+        font-size: 16px;
+      }
+      .footer-txt{
+        text-align: center;
+        padding-top: 150px;
+        font-size: 20px;
+          
+      }
 }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1400px) {
     .navbar{
         position: relative;
         font-size: 25px;
@@ -256,213 +399,16 @@ body {
         width: 100%;
         height: 50px;
     }
-}
 
-
-
-footer{
-    background-image: url(/images/faq-main.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    padding-bottom: 20px;
-    background-color: #9ee1dd!important;
-  }
-
-  .footer-txt{
-    text-align: center;
-    padding-top: 350px;
-    font-size: 35px;
-      
-  }
-
-
-/* FAQ Collapsible */
-
-.collapsible {
-    background-image: url(/images/test-plus\ \(1\).png);
-    color: #ffff;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    font-family: var(--font-primary);
-    cursor: pointer;
-    margin: auto;
-    cursor: pointer;
-    margin: auto;
-    padding-left: 5%;
-    padding-bottom: 1%;
-    width: 67%;
-    height: 160px;
-    border: none;
-    text-align: left;
-    align-content: center;
-    justify-content: center;
-    font-size: 60px;
-    transform: translate(1%, 120%);
-  }
-
-.active,
-.collapsible:active{
-  background-image: url(/images/test-minus.png);
-  background-repeat: no-repeat;
-  background-color: transparent;
-  margin: auto;
-  padding-left: 5%;
-  padding-bottom: 1%;
-  cursor: pointer;
-}
- 
- 
-
-  .faq-content {
-    padding: 0 18px;
-    display: block;
-    overflow: hidden;
-    background-color: black;
-    text-align: left;
-    margin: auto;
-    display: none;
-    overflow: hidden;
-    width: 65%;
-    background-color: #9ee1dd;
-    align-content: center;
-    justify-content: center;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    border-left-style: solid;
-    border-left-color: #000000;
-    border-left-width: 10px;
-    border-right-style: solid;
-    border-right-color: #000000;
-    border-right-width: 10px;
-    border-bottom-style: solid;
-    border-bottom-color: #000000;
-    border-bottom-width: 10px;
-    border-top-style: solid;
-    border-top-color: #000000;
-    border-top-width: 10px;
-    position: relative;
-    font-size: 20px;
-    left: 5px;
-    top: 100px;
-    transform: translate(1%, 120%);
-  }
-  /* .collapsible:after {
-    content: '\02795';  Unicode character for "plus" sign (+) 
-    font-size: 13px;
-    color: white;
-    float: right;
-    margin-left: 20px;
-  }
-  
-  .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-)
-  } */
-
-  .container {
-      width: 100%;
-      max-width: 80rem;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-  }
-
-  .accordian-item{
-      background-color: #283042;
-      text-align: center;
-      border-radius: .4rem;
-      margin-bottom: 1rem;
-      padding: 1rem;
-      box-shadow: .5rem 2px .5rem rgba(0,0,0, .1);
-
-     }
-
-    .accordian-link {
-        font-size: 1.6rem;
-        color: rgba(255,255,255, .8);
-        text-decoration: none;
-        background-color: #283042;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1rem 0;
-
+    .collapsible{
+        height: 100px;
+        
     }
+}
 
-    .accordian-link i {
-        color: #e7d5ff;
-        padding: .5rem;
+@media (min-width: 2200px) {
+
+    .collapsible {
+        width: 37%;
     }
-
-   .answer{
-       max-height: 0;
-       overflow: hidden;
-       position: relative;
-
-   }
-
- /* Accordion  */
-
-.accordion {
-    width: 800px;
-    position: absolute;
-    bottom: -400%;
-    left: 50%;
-    transform: translate(-50%, -55%);
-
- 
 }
-
-.accordion .contentBx {
-    position: relative;
-    margin: 10px 20px;
-}
-
-
-.accordion .contentBx .label {
-    position: relative;
-    padding: 10px;
-    background: #2694af;
-    color: #ffff;
-    cursor: pointer;
-
-}
-
-.accordion .contentBx .label::before
-{
-    content: '+';
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    font-size: 2em;
-
-}
-
-
-.accordion .contentBx.active .label::before
-{
-    content: '-';
-}
-
-.accordion .contentBx .content {
-    position: relative;
-    padding: 5px;
-    background: black;
-    height: 0;
-    overflow: hidden;
-    transition: 0.5s;
-    overflow-y: auto;
-}
-
-.accordion .contentBx.active .content 
-{
-    height:150px;
-    padding: 10px;
-}
-
-
