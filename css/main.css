@@ -165,11 +165,6 @@ footer{
       
   }
 
-footer{
-    background-size: contain!important;
-}
-
-
 /* FAQ Collapsible */
 
 .collapsible {
@@ -180,8 +175,6 @@ footer{
     font-family: var(--font-primary);
     cursor: pointer;
     margin: auto;
-    cursor: pointer;
-    margin: auto;
     padding-left: 5%;
     padding-bottom: 1%;
     width: 67%;
@@ -190,7 +183,7 @@ footer{
     text-align: left;
     align-content: center;
     justify-content: center;
-    font-size: 60px;
+    font-size: 30px;
     transform: translate(1%, 120%);
   }
 
@@ -244,6 +237,8 @@ footer{
     transform: translate(1%, 120%);
   }
 
+
+
   .div-footer {
     background-image: url("/images/faq2.png");
     background-size: 100%;
@@ -254,17 +249,7 @@ footer{
     height: auto;
     text-align: center;
   }
-  /* .collapsible:after {
-    content: '\02795';  Unicode character for "plus" sign (+) 
-    font-size: 13px;
-    color: white;
-    float: right;
-    margin-left: 20px;
-  }
-  
-  .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-)
-  } */
+ 
 
   @media all and (max-width: 313px) {
     .navbar{
@@ -298,9 +283,11 @@ footer{
     .active {
         display: block;
     }
-    
-    
+   
   }
+
+
+
 
 @media all and (max-width: 480px) {
     .navbar{
@@ -322,31 +309,10 @@ footer{
         font-size: 10px;
           
       }
-    
-
-      
-   /* .dropdown {
-      display: block;
-      position: absolute;
-      right: 10px;
-      top: 10px;
+      .collapsible{
+        transform: translate(1%, 60%);
+     
     }
-    .nav-list{
-        list-style-type: none;
-        width: 100%;
-        text-align: center;
-        padding-top: 10px;
-        display: none;
-    }
-    .list-item{
-        display: block;
-        padding: 20px 10px;
-        border: 1px solid white;
-    }
-
-    .active {
-        display: block;
-    }*/
 
   }
 
@@ -362,10 +328,18 @@ footer{
     
 }
 
+@media (max-width: 670px) {
+    .collapsible{
+        height: 85px;
+        font-size: 30px;
+        transform: translate(1%, 60%);
+    }
+}
+
 @media (max-width: 870px) {
     .collapsible{
-        height: 100px!important;
-        font-size: 25px!important;
+        height: 85px;
+        font-size: 35px
     }
 }
 
@@ -403,12 +377,5 @@ footer{
     .collapsible{
         height: 100px;
         
-    }
-}
-
-@media (min-width: 2200px) {
-
-    .collapsible {
-        width: 37%;
     }
 }
