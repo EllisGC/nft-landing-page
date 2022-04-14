@@ -14,12 +14,79 @@
   --accent-color: #0b72e7;
   --header-shadow: #000 0px 0px 5px;
 }
+.socials-logo{
+    margin-top:20px !important;
+}
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
+@media (min-width:520px){
+  .primary-logo {
+    width: 220px !important;
+    height: 60px !important;
+    margin-top: 17px;
+}
+}
+@media (max-width:520px){
+  .primary-logo {
+    width: 150px !important;
+    height: 40px !important;
+}
+  .collapsible{
+    height: 70px !important;
+    transform: translate(1%, 120%) !important;
+    width: 250px !important;
+    padding-bottom: 15% !important;
+  }
+  .faq-content{
+    width: 240px !important;
+    top: -19px !important;
+  }
+  .ien{
+    margin-top: -65px !important;
+  }
+  .ide{
+    margin-top: -130px !important;
+  }
+}
+@media (max-width:920px) and (min-width:520px){
+  .collapsible{
+    height: 70px !important;
+    transform: translate(1%, 120%) !important;
+    width: 400px !important;
+    padding-bottom: 6% !important;
+  }
+  .faq-content{
+    width: 390px !important;
+    top: -6px !important;
+  }
+  .ien{
+    margin-top: -35px !important;
+  }
+  .ide{
+    margin-top: -65px !important;
+  }
+}
+@media (max-width:2920px) and (min-width:920px){
+  .collapsible{
+   font-size: 35px !important;
+    transform: translate(1%, 120%) !important;
+    width: 800px !important;
+    padding-bottom: 70px !important;
+  }
+  .faq-content{
+    width: 780px !important;
+    top: 36px !important;
+  }
+  .ien{
+    margin-top: 12px !important;
+  }
+  .ide{
+    margin-top: -25px !important;
+  }
+}
 body {
     background-color: var(--bg-color);
     display: flex;
@@ -358,7 +425,7 @@ footer{
       }
       .footer-txt{
         text-align: center;
-        padding-top: 150px;
+        padding-top: 170px;
         font-size: 20px;
           
       }
