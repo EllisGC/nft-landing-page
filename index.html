@@ -66,7 +66,7 @@
    <div class="card">
         <section id="mission-section">
             <div id ="img1">
-                <img src="/images/Join-Pack-final.png"> 
+                <img src="/images/Beach.png"> 
                 <div class="centered-desc"><p style="font-size: 2vw;">Shark Pack is a community driven collection of 10k randomly generated ERC-721 tokens on the Ethereum blockchain.
                     Our objective is to create the largest school of sharks in the metaverse.
                     By joining the pack it grants you full rights to the shark artwork and a cool new PFP to flex among your fellow degens. We will be making an impact in the ocean by donating post mint to our chosen charity Shark Allies, to help safeguard the future of our sharks.
@@ -90,6 +90,19 @@
                 <img src="images/Roadmap.png">
             </div>
         </section>
+    </div>
+    <button id="buttonModal"><img src="images/P1.png" alt=""></button>
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close"></span>
+            <h1>Phase 1</h1>
+            <p>Sharklist & Public Mint</p>
+            <p>Artwork reveal 48 hour after mint</p> 
+            <p>Donation of 5% of mint to Shark Allies</p>
+            <p>Community Wallet and Members Voting system</p></Modal>
+        </div>
     </div>
     <div id="faq-section">
         <section id="faq-section">
@@ -168,6 +181,31 @@
             });
         }
 
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("buttonModal");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
 </script>
 
 
